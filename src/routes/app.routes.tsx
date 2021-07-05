@@ -10,7 +10,7 @@ const { Navigator, Screen } = createStackNavigator();
 
 import { theme } from "../global/styles/theme";
 
-export function AuthRoutes() {
+export function AppRoutes() {
   return (
     <Navigator
       headerMode="none"

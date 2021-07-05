@@ -1,10 +1,18 @@
 import { StyleSheet } from "react-native";
 import { theme } from "../../global/styles/theme";
+
 export const styles = StyleSheet.create({
+  container: {
+    width: 62,
+    height: 66,
+    alignItems: "center",
+    justifyContent: "center",
+  },
   image: {
-    width: 64,
-    height: 64,
     borderRadius: 8,
-    marginRight: 20,
+
+    width: 62,
+    height: 66,
+    marginRight: 10,
   },
 });
