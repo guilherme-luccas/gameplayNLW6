@@ -22,7 +22,7 @@ import { styles } from "./styles";
 import { theme } from "../../global/styles/theme";
 import { Button } from "../../components/Button";
 import { ModalView } from "../../components/ModalView";
-import Guilds from "../Guilds";
+import { Guilds } from "../Guilds";
 import { GuildProps } from "../../components/Guild";
 import AsyncStorage from "@react-native-async-storage/async-storage";
 import { COLLECTION_APPOINTMENTS } from "../../configs/database";

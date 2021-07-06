@@ -7,7 +7,6 @@ import React, {
 } from "react";
 
 import * as AuthSession from "expo-auth-session";
-
 import AsyncStorage from "@react-native-async-storage/async-storage";
 
 const { SCOPE } = process.env;
@@ -97,6 +96,7 @@ function AuthProvider({ children }: AuthProviderProps) {
     if (storage) {
       const userLogged = JSON.parse(storage) as User;
       api.defaults.headers.authorization = `Bearer ${userLogged.token}`;
+
       setUser(userLogged);
     }
   }
